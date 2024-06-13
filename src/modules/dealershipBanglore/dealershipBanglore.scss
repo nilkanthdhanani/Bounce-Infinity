@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.dealershipBanglore {
+    position: relative;
+    background-image: url("../../assets/images/dealershipBanglore/background.png");
+    width: 100%;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+
+    .bangalore-banner-div {
+        margin-top: 109px;
+        padding: 73px 0 49px 0;
+
+        @media (max-width: 1250px) {
+            padding: 30px 0 20px 0;
+        }
+
+        .hero-contant {
+            display: grid;
+            grid-template-columns: 1fr 55%;
+
+            .hero-contant1 {
+                position: relative;
+
+                .hero-contant1-abso {
+                    position: absolute;
+                    top: 100px;
+                    left: 25px;
+                    height: 100%;
+                    width: 100%;
+
+                    @media (max-width: 1360px) {
+                        top: 40px;
+                    }
+
+                    @media (max-width: 1250px) {
+                        top: 0px;
+                    }
+
+                    .hero-contant1-div {
+                        padding-left: 70px;
+
+                        @media (max-width: 1360px) {
+                            padding-left: 0px;
+                        }
+
+                        h1 {
+                            font-size: 48px;
+                            line-height: 59px;
+                            color: #fff;
+                            font-weight: 800;
+                            margin-bottom: 15px;
+
+                            @media (max-width: 1250px) {
+                                font-size: 36px;
+                                line-height: 48px;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        p {
+                            font-family: "Poppins", sans-serif;
+                            font-size: 22px;
+                            line-height: 36px;
+                            color: rgba(255, 255, 255, 0.84);
+                            font-weight: 400;
+
+                            @media (max-width: 1250px) {
+                                font-size: 18px;
+                                line-height: 30px;
+                            }
+                        }
+
+                        .hero-contant1-button {
+                            margin-top: 40px;
+
+                            button {
+                                padding: 12px 65px;
+                                background-color: #ef404a;
+                                border-radius: 6px;
+                                border: none;
+                                color: #ffffff;
+                                font-family: "Poppins", sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 30px;
+                                cursor: pointer;
+                                transition: 0.3s ease-in-out;
+
+                                &:hover {
+                                    background-color: #e32629;
+                                    transition: 0.3s ease-in-out;
+                                }
+                            }
+                        }
+
+                        .onclick-button {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            gap: 8px;
+                            padding-top: 96px;
+
+                            @media (max-width: 1250px) {
+                                padding-top: 30px;
+                            }
+
+                            button {
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 10px;
+                                background-color: #ffffff;
+                                border: none;
+                                cursor: pointer;
+
+                                &:first-child {
+                                    width: 35px;
+                                    background-color: rgba(239, 64, 74, 1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hero-contant2 {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.located {
+    margin: 70px 0;
+
+    @media (max-width: 576px) {
+        margin: 25px 0;
+    }
+
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: content-box;
+
+        @media (max-width: 576px) {
+            padding: 0 15px;
+        }
+
+        .located-div {
+            background: linear-gradient(177.61deg, #ffe7cd 2%, #fcb9a2 124.85%);
+            padding: 45px 35px;
+
+            @media (max-width: 576px) {
+                padding: 20px;
+            }
+
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 32px;
+                color: #ef404a;
+                font-weight: 700;
+                line-height: 39px;
+                letter-spacing: 0.01em;
+                padding-bottom: 50px;
+                text-align: center;
+
+                @media (max-width: 1024px) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+
+                @media (max-width: 576px) {
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding-bottom: 10px;
+                }
+            }
+            .located-input {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 23px;
+
+                @media (max-width: 1024px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media (max-width: 576px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 15px;
+                }
+
+                .contact-div-box-select {
+                    position: relative;
+
+                    h3 {
+                        font-size: 18px;
+                        color: #282828;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 600;
+                        line-height: 22px;
+                        margin-bottom: 10px;
+
+                        @media (max-width: 576px) {
+                            font-size: 12px;
+                            line-height: 15px;
+                            margin-bottom: 6px;
+                        }
+                    }
+
+                    select {
+                        width: 100%;
+                        padding: 19px 18px 18px 18px;
+                        border-radius: 4px;
+                        box-shadow: 0px 1px 4px 0px #00000026;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #282828;
+                        font-weight: 500;
+                        border: none;
+                        appearance: none;
+                        cursor: pointer;
+
+                        @media (max-width: 1024px) {
+                            font-size: 12px;
+                            line-height: 15px;
+                            padding: 11px;
+                            color: #6c6c6c;
+                        }
+                    }
+
+                    .drop {
+                        position: absolute;
+                        top: 46px;
+                        right: 20px;
+                        cursor: pointer;
+
+                        @media (max-width: 1024px) {
+                            top: 39px;
+                            right: 11px;
+                            color: #6c6c6c;
+                        }
+
+                        @media (max-width: 576px) {
+                            top: 26px;
+                        }
+                    }
+                }
+
+                .contact-div-box-button {
+                    display: flex;
+                    align-items: end;
+
+                    button {
+                        width: 100%;
+                        padding: 15px;
+                        background-color: #ef404a;
+                        border-radius: 6px;
+                        border: none;
+                        color: #ffffff;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 25px;
+                        letter-spacing: 0.02em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 8px;
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: #e32629;
+                            transition: 0.3s ease-in-out;
+                        }
+
+                        @media (max-width: 1024px) {
+                            width: 100%;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dib-div {
+    margin: 0 0 100px 0;
+    padding: 80px 0;
+    background: linear-gradient(0deg, #fff1eb 0%, #ace0f9 100%);
+
+    @media (max-width: 576px) {
+        padding: 25px 0;
+        margin: 25px 0;
+    }
+
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: content-box;
+
+        @media (max-width: 576px) {
+            padding: 0 15px;
+        }
+
+        .dbi-div-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px 45px;
+
+            @media (max-width: 1024px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 576px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+
+            .dbi-div-grid1 {
+                padding: 15px;
+                box-shadow: 0px 1px 4px 0px #00000026;
+                background: #fff;
+                border-radius: 6px;
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+
+                h3 {
+                    margin: 14px 0 8px 0;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #282828;
+                    font-weight: 600;
+                }
+
+                .dbi-div-grid1-pera {
+                    display: flex;
+                    gap: 5px;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        line-height: 19px;
+                        color: #6c6c6c;
+                        font-weight: 500;
+                    }
+
+                    .map-img {
+                        img {
+                            width: 20px;
+                            object-fit: contain;
+                        }
+                    }
+                }
+
+                .dbi-div-grid1-button {
+                    overflow: hidden;
+                    margin-top: 15px;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 12px;
+
+                    @media (max-width: 300px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+
+                    button {
+                        width: 100%;
+                        padding: 13px 0;
+                        background-color: #ef404a;
+                        border-radius: 4px;
+                        border: 1px solid transparent;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 17px;
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: #ef404a;
+                            border: 1px solid #ef404a;
+                            transition: 0.3s ease-in-out;
+                        }
+
+                        @media (max-width: 1024px) {
+                            padding: 10px;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

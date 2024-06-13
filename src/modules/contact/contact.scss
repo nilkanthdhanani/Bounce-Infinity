@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.contact {
+    background: linear-gradient(0deg, #fff1eb 0%, #ace0f9 100%);
+    padding: 80px 0;
+    margin-top: 103px;
+
+    @media (max-width: 1024px) {
+        padding: 40px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 25px 0;
+        margin-top: 69px;
+    }
+
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: content-box;
+
+        @media (max-width: 576px) {
+            padding: 0 15px;
+        }
+
+        .contact-head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+
+            @media (max-width: 576px) {
+                padding-bottom: 12px;
+            }
+
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 28px;
+                color: #282828;
+                font-weight: 700;
+                line-height: 34px;
+                padding-bottom: 10px;
+                border-bottom: 4px solid #ef404a;
+
+                @media (max-width: 1024px) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+
+                @media (max-width: 576px) {
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid #ef404a;
+                }
+            }
+        }
+
+        .contact-pera {
+            margin-bottom: 60px;
+
+            @media (max-width: 1024px) {
+                margin-bottom: 40px;
+            }
+
+            @media (max-width: 576px) {
+                margin-bottom: 22px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                color: #282828;
+                font-weight: 400;
+                text-align: center;
+
+                @media (max-width: 576px) {
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .contact-div {
+            display: grid;
+            grid-template-columns: 616px 1fr;
+            gap: 60px;
+
+            @media (max-width: 1024px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            @media (max-width: 576px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 12px;
+
+                @media (max-width: 1024px) {
+                    height: 83%;
+                    object-fit: cover;
+                }
+
+                @media (max-width: 576px) {
+                    height: 100%;
+                    object-fit: none;
+                }
+            }
+
+            .contact-div-box {
+                h3 {
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #282828;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+
+                    @media (max-width: 576px) {
+                        font-size: 12px;
+                        line-height: 15px;
+                        margin-bottom: 6px;
+                    }
+                }
+
+                .contact-div-box-select {
+                    position: relative;
+
+                    select {
+                        width: 100%;
+                        padding: 19px 18px 18px 18px;
+                        border-radius: 4px;
+                        box-shadow: 0px 1px 4px 0px #00000026;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #282828;
+                        font-weight: 500;
+                        border: none;
+                        appearance: none;
+                        cursor: pointer;
+
+                        @media (max-width: 1024px) {
+                            font-size: 12px;
+                            line-height: 15px;
+                            padding: 11px;
+                            color: #6c6c6c;
+                        }
+                    }
+
+                    .drop {
+                        position: absolute;
+                        top: 46px;
+                        right: 20px;
+                        cursor: pointer;
+
+                        @media (max-width: 1024px) {
+                            top: 39px;
+                            right: 11px;
+                            color: #6c6c6c;
+                        }
+
+                        @media (max-width: 576px) {
+                            top: 26px;
+                        }
+                    }
+                }
+
+                .contact-div-box-input2 {
+                    position: relative;
+                    margin-top: 30px;
+
+                    @media (max-width: 1024px) {
+                        margin-top: 20px;
+                    }
+
+                    @media (max-width: 576px) {
+                        margin-top: 15px;
+                    }
+
+                    .contact-div-box-input2-select {
+                        position: absolute;
+                        top: 47px;
+                        left: 5px;
+
+                        @media (max-width: 1024px) {
+                            top: 40px;
+                        }
+
+                        @media (max-width: 576px) {
+                            top: 27px;
+                        }
+
+                        select {
+                            border: none;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #282828;
+                            font-weight: 600;
+                            border-right: 1px solid #6c6c6c;
+                            appearance: none;
+                            padding: 0 5px;
+
+                            @media (max-width: 576px) {
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 15px 18px 15px 60px;
+                        background-color: #ffffff;
+                        border-radius: 4px;
+                        border: none;
+                        box-shadow: 0px 1px 4px 0px #00000026;
+
+                        @media (max-width: 1024px) {
+                            padding: 7px 7px 7px 55px;
+                            border-radius: 2px;
+                        }
+                    }
+                    
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                      -webkit-appearance: none;
+                      margin: 0;
+                    }
+                }
+
+                .contact-div-box-input {
+                    margin-top: 30px;
+
+                    @media (max-width: 1024px) {
+                        margin-top: 20px;
+                    }
+
+                    @media (max-width: 576px) {
+                        margin-top: 15px;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 15px;
+                        border: none;
+                        border-radius: 4px;
+                        box-shadow: 0px 1px 4px 0px #00000026;
+                        background: #fff;
+
+                        @media (max-width: 1024px) {
+                            padding: 7px 7px 7px 11px;
+                        }
+                    }
+                    
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                      -webkit-appearance: none;
+                      margin: 0;
+                    }
+                }
+
+                .contact-div-box-text {
+                    margin-top: 30px;
+
+                    @media (max-width: 1024px) {
+                        margin-top: 20px;
+                    }
+
+                    @media (max-width: 576px) {
+                        margin-top: 15px;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        padding: 18px 0 114px 18px;
+                        border: none;
+                        border-radius: 4px;
+                        box-shadow: 0px 1px 4px 0px #00000026;
+                        background: #fff;
+                        display: block;
+                        resize: none;
+
+                        @media (max-width: 1024px) {
+                            padding: 11px 0 50px 11px;
+                        }
+                    }
+                }
+
+                ::placeholder {
+                    font-size: 14px;
+                    font-weight: 17px;
+                    color: #575757;
+                    font-weight: 400;
+
+                    @media (max-width: 1024px) {
+                        font-size: 12px;
+                        font-weight: 15px;
+                        font-weight: 500;
+                    }
+                }
+
+                .contact-div-box-button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 45px;
+
+                    @media (max-width: 1024px) {
+                        margin-top: 35px;
+                    }
+
+                    @media (max-width: 576px) {
+                        margin-top: 25px;
+                    }
+
+                    button {
+                        padding: 15px 112px;
+                        background-color: #ef404a;
+                        border-radius: 6px;
+                        border: none;
+                        color: #ffffff;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: #e32629;
+                            transition: 0.3s ease-in-out;
+                        }
+
+                        @media (max-width: 576px) {
+                            width: 100%;
+                            padding: 10px;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+
+                    @media (max-width: 576px) {
+                        a {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+$error-bg-color: #000;
+$error-text-color: #fff;
+$error-accent-color: #ff6f61;
+
+.error-page {
+  position: relative;
+  height: 100vh;
+  background: $error-bg-color;
+  overflow: hidden;
+  color: $error-text-color;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+
+  .error-content {
+    position: relative;
+    z-index: 99;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out;
+
+    .error-code {
+      font-size: 10rem;
+      font-weight: 700;
+      margin: 0;
+      animation: bounce 2s infinite;
+    }
+
+    .error-message {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s 1s forwards;
+      opacity: 0;
+    }
+
+    .error-description {
+      font-size: 1.25rem;
+      max-width: 600px;
+      line-height: 1.5;
+      margin: 0 20px;
+      animation: fadeIn 2s 2s forwards;
+      opacity: 0;
+
+      .home-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ffeb3b;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid #ffeb3b;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #ffeb3b;
+          color: #000;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .stars,
+  .twinkling,
+  .clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: repeat;
+  }
+
+  .stars {
+    background: url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+    z-index: 0;
+  }
+
+  .twinkling {
+    background: url("https://www.transparenttextures.com/patterns/shine.png") repeat;
+    z-index: 1;
+    animation: move-twink-back 200s linear infinite;
+  }
+
+  .clouds {
+    background: url("https://www.transparenttextures.com/patterns/asfalt-light.png") repeat;
+    z-index: 2;
+    animation: move-clouds-back 200s linear infinite;
+  }
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}

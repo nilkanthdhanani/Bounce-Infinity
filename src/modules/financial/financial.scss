@@ -1,0 +1,355 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.financial-banner {
+    background-image: url("../../assets/images/financial/financialBg.png");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    @media (max-width: 1024px) {
+        height: 400px;
+    }
+
+    @media (max-width: 576px) {
+        height: 200px;
+        margin-top: 69px;
+    }
+
+    .financial-banner-main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.62);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .financial-banner-main-head {
+            @media (max-width: 1024px) {
+                padding: 0 30px;
+            }
+
+            h2 {
+                font-size: 48px;
+                line-height: 58px;
+                color: #fff;
+                font-weight: 800;
+                margin-bottom: 4px;
+                text-align: center;
+
+                @media (max-width: 1024px) {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                @media (max-width: 576px) {
+                    font-size: 21px;
+                    line-height: 26px;
+                }
+            }
+
+            p {
+                font-family: "Poppins", sans-serif;
+                font-size: 22px;
+                line-height: 36px;
+                color: #fff;
+                font-weight: 400;
+                text-align: center;
+
+                @media (max-width: 1024px) {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+
+                @media (max-width: 576px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+
+.press2 {
+    background: linear-gradient(180deg, #e3fdf5 0%, #ffe6fa 100%);
+    padding: 80px 0;
+    margin-bottom: 80px;
+
+    @media (max-width: 1024px) {
+        padding: 40px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 25px 0;
+        margin-bottom: 25px;
+    }
+
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: content-box;
+
+        @media (max-width: 576px) {
+            padding: 0 15px;
+        }
+
+        .press-head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 60px;
+
+            @media (max-width: 1024px) {
+                padding-bottom: 50px;
+            }
+
+            @media (max-width: 576px) {
+                padding-bottom: 25px;
+            }
+
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 28px;
+                color: #282828;
+                font-weight: 700;
+                line-height: 34px;
+                padding-bottom: 10px;
+                border-bottom: 4px solid #ef404a;
+
+                @media (max-width: 1024px) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+
+                @media (max-width: 576px) {
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid #ef404a;
+                }
+            }
+        }
+
+        .press2-div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            @media (max-width: 576px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+
+            .press2-div-grid {
+                background: #fff;
+                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+                padding: 15px 15px 20px 15px;
+                border-radius: 6px;
+
+                @media (max-width: 576px) {
+                    padding: 15px;
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: 6px;
+
+                    @media (max-width: 576px) {
+                        height: 200px;
+                    }
+                }
+
+                h2 {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #282828;
+                    font-weight: 700;
+                    margin: 20px 0 5px 0;
+
+                    @media (max-width: 576px) {
+                        font-size: 14px;
+                        line-height: 17px;
+                        margin: 15px 0 6px 0;
+                    }
+                }
+
+                span {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #6c6c6c;
+                    font-weight: 500;
+
+                    @media (max-width: 576px) {
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.financial-select {
+    background: linear-gradient(180deg, #e3fdf5 0%, #ffe6fa 100%);
+    padding: 80px 0;
+
+    @media (max-width: 1024px) {
+        padding: 40px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 25px 0;
+    }
+
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: content-box;
+
+        @media (max-width: 576px) {
+            padding: 0 15px;
+        }
+
+        .fs-input {
+            margin-bottom: 50px;
+            max-width: 930px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            @media (max-width: 1024px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+                margin-bottom: 25px;
+            }
+
+            .fs-input-select {
+                position: relative;
+
+                select {
+                    width: 100%;
+                    padding: 16px 18px;
+                    border-radius: 4px;
+                    box-shadow: 0px 1px 4px 0px #00000026;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #282828;
+                    font-weight: 500;
+                    border: none;
+                    appearance: none;
+                    cursor: pointer;
+
+                    @media (max-width: 576px) {
+                        font-size: 12px;
+                        line-height: 15px;
+                        padding: 11px;
+                        color: #6c6c6c;
+                    }
+                }
+
+                .drop {
+                    position: absolute;
+                    top: 12px;
+                    right: 20px;
+                    cursor: pointer;
+
+                    @media (max-width: 1024px) {
+                        color: #6c6c6c;
+                    }
+
+                    @media (max-width: 576px) {
+                        top: 7px;
+                        right: 11px;
+                    }
+                }
+            }
+        }
+
+        .fs-div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            @media (max-width: 1024px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 576px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .fs-div-grid {
+                background: #fff;
+                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+                padding: 15px;
+                border-radius: 6px;
+
+                .fs-div-grid-box {
+                    background: #dbdbdb;
+                    border-radius: 4px;
+                    width: 100%;
+                    height: 167px;
+                }
+
+                .fs-div-grid-file {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-top: 15px;
+
+                    .fs-div-grid-file-head {
+                        h2 {
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #282828;
+                            font-weight: 700;
+                            margin: 0 0 3px 0;
+
+                            @media (max-width: 576px) {
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin: 0 0 1px 0;
+                            }
+                        }
+
+                        span {
+                            display: block;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #6c6c6c;
+                            font-weight: 500;
+
+                            @media (max-width: 576px) {
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

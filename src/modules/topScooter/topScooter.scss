@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.topScooter-banner {
+    position: relative;
+    background-image: url("../../assets/images/topScooter/background.png");
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @media (max-width: 576px) {
+        display: none;
+    }
+
+    .topScooter-banner-div {
+        padding: 140px 0 125px 0;
+
+        @media (max-width: 1024px) {
+            padding: 90px 0 20px 0;
+        }
+
+        .hero-contant {
+            display: grid;
+            grid-template-columns: 1fr 55%;
+            gap: 66px;
+
+            @media (max-width: 1250px) {
+                padding-bottom: 50px;
+            }
+
+            @media (max-width: 1024px) {
+                gap: 30px;
+                padding-bottom: 0;
+            }
+
+            @media (max-width: 850px) {
+                padding-bottom: 50px;
+            }
+
+            .hero-contant1 {
+                padding-top: 75px;
+                display: flex;
+                justify-content: flex-end;
+
+                @media (max-width: 1024px) {
+                    padding-top: 20px;
+                }
+
+                .hero-contant1-div {
+                    max-width: 454px;
+
+                    @media (max-width: 1024px) {
+                        padding-left: 20px;
+                    }
+
+                    h1 {
+                        font-size: 48px;
+                        line-height: 59px;
+                        color: #fff;
+                        font-weight: 800;
+                        margin-bottom: 15px;
+
+                        @media (max-width: 1024px) {
+                            font-size: 36px;
+                            line-height: 48px;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    p {
+                        font-family: "Poppins", sans-serif;
+                        font-size: 22px;
+                        line-height: 36px;
+                        color: rgba(255, 255, 255, 0.84);
+                        font-weight: 400;
+
+                        @media (max-width: 1024px) {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+
+                    .hero-contant1-button {
+                        margin-top: 40px;
+
+                        @media (max-width: 1024px) {
+                            margin-top: 25px;
+                        }
+
+                        button {
+                            padding: 12px 65px;
+                            background-color: #ef404a;
+                            border-radius: 6px;
+                            border: none;
+                            color: #ffffff;
+                            font-family: "Poppins", sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            cursor: pointer;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                background-color: #e32629;
+                                transition: 0.3s ease-in-out;
+                            }
+                        }
+                    }
+
+                    .onclick-button {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        gap: 8px;
+                        padding-top: 155px;
+
+                        @media (max-width: 1350px) {
+                            padding-top: 60px;
+                        }
+
+                        @media (max-width: 1024px) {
+                            padding-top: 30px;
+                        }
+
+                        button {
+                            height: 10px;
+                            width: 10px;
+                            border-radius: 10px;
+                            background-color: #ffffff;
+                            border: none;
+                            cursor: pointer;
+                        }
+
+                        button.active {
+                            width: 35px;
+                            background-color: rgba(239, 64, 74, 1);
+                        }
+                    }
+                }
+            }
+
+            .hero-contant2 {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                }
+
+                .hero-contant2-scooty {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    padding: 0 76px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @media (max-width: 1024px) {
+                        padding: 20px;
+                    }
+
+                    img {
+                        width: 100%;
+                        object-fit: contain;
+
+                        @media (max-width: 1024px) {
+                            max-height: 280px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.bangalore-div {
+    background: linear-gradient(0deg, #fff1eb 0%, #ace0f9 100%);
+    padding: 80px 0;
+    margin: 80px 0 100px 0;
+
+    @media (max-width: 1024px) {
+        padding: 40px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 25px 0;
+        margin: 25px 0;
+    }
+
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: content-box;
+
+        @media (max-width: 576px) {
+            padding: 0 15px;
+        }
+
+        .bangalore-head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 60px;
+
+            @media (max-width: 576px) {
+                padding-bottom: 25px;
+            }
+
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 28px;
+                color: #282828;
+                font-weight: 700;
+                line-height: 34px;
+                padding-bottom: 10px;
+                border-bottom: 4px solid #ef404a;
+                text-align: center;
+
+                @media (max-width: 1024px) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+
+                @media (max-width: 576px) {
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid #ef404a;
+                }
+            }
+        }
+
+        .bangalore-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            @media (max-width: 1024px) {
+                gap: 20px;
+            }
+
+            @media (max-width: 576px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+
+            .bangalore-grid-box {
+                background-color: #fff;
+                padding: 25px 20px 30px 20px;
+
+                @media (max-width: 1024px) {
+                    padding: 20px 15px 25px 15px;
+                }
+
+                .bangalore-watermark {
+                    background-image: url("../../assets/images/bangalore/watermark.png");
+                    width: 100%;
+                    height: 100%;
+                    background-size: contain;
+                    background-position: top;
+                    background-repeat: no-repeat;
+
+                    .bangalore-watermark-scooty {
+                        padding: 25px 5px 35px 5px;
+
+                        @media (max-width: 576px) {
+                            display: flex;
+                            justify-content: center;
+                            padding: 10px 5px 10px 5px;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+
+                            @media (max-width: 576px) {
+                                width: auto;
+                            }
+
+                            @media (max-width: 410px) {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .bangalore-watermark-head {
+                        padding-bottom: 25px;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+
+                        @media (max-width: 576px) {
+                            padding-bottom: 15px;
+                        }
+
+                        h3 {
+                            font-size: 36px;
+                            line-height: 28px;
+                            color: #282828;
+                            font-weight: 700;
+                            letter-spacing: 0.06em;
+                            margin-bottom: 25px;
+
+                            @media (max-width: 1024px) {
+                                font-size: 24px;
+                                line-height: 38px;
+                                margin-bottom: 15px;
+                            }
+                        }
+
+                        p {
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #4f4f4f;
+                            font-weight: 500;
+                            margin-bottom: 22px;
+
+                            @media (max-width: 1024px) {
+                                font-size: 16px;
+                                line-height: 20px;
+                                margin-bottom: 10px;
+                            }
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .bangalore-watermark-price {
+                        padding-top: 22px;
+
+                        @media (max-width: 576px) {
+                            padding-top: 15px;
+                        }
+
+                        h4 {
+                            font-size: 28px;
+                            line-height: 34px;
+                            color: #282828;
+                            font-weight: 500;
+                            margin-top: 8px;
+
+                            @media (max-width: 1024px) {
+                                font-size: 22px;
+                                line-height: 38px;
+                                margin-top: 5px;
+                            }
+                        }
+
+                        span {
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #949494;
+                            font-weight: 500;
+
+                            @media (max-width: 1024px) {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    .bangalore-watermark-button {
+                        margin-top: 30px;
+
+                        @media (max-width: 1024px) {
+                            margin-top: 22px;
+                        }
+
+                        @media (max-width: 576px) {
+                            margin-top: 15px;
+                        }
+
+                        button {
+                            width: 100%;
+                            padding: 11px;
+                            background-color: #ef404a;
+                            border-radius: 6px;
+                            border: none;
+                            color: #ffffff;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 22px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 8px;
+                            cursor: pointer;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                background-color: #e32629;
+                                transition: 0.3s ease-in-out;
+                            }
+
+                            @media (max-width: 1024px) {
+                                width: 100%;
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

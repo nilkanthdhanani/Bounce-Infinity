@@ -1,0 +1,806 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.dealership-banner-main {
+    background-image: url("../../assets/images/dealership/herobg.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+
+    @media (max-width: 576px) {
+        margin-top: 69px;
+    }
+
+    .banner-container {
+        max-width: 1278px;
+        margin: 0 auto;
+        img {
+            opacity: 0;
+            width: 100%;
+            max-height: 600px;
+            object-fit: contain;
+            display: block;
+        }
+    }
+}
+
+.find-dealer {
+    margin: 80px 0 100px 0;
+
+    @media (max-width: 576px) {
+        margin: -30px 0 25px 0;
+        position: relative;
+    }
+
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: content-box;
+
+        @media (max-width: 576px) {
+            padding: 0 15px;
+        }
+
+        .find-dealer-div {
+            background: linear-gradient(168.37deg, #ffe7cd 8.53%, #fcb9a2 96.91%);
+            padding: 50px 0;
+            margin-bottom: 100px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 576px) {
+                padding: 20px 25px;
+                border-radius: 4px;
+                margin-bottom: 25px;
+            }
+
+            .find-dealer-div-contant {
+                @media (max-width: 1024px) {
+                    padding: 0 20px;
+                }
+                h2 {
+                    font-size: 34px;
+                    line-height: 41px;
+                    color: #ef404a;
+                    font-weight: 700;
+                    text-align: center;
+                    margin-bottom: 6px;
+
+                    @media (max-width: 576px) {
+                        font-size: 18px;
+                        line-height: 22px;
+                        margin-bottom: 3px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #282828;
+                    font-weight: 400;
+                    text-align: center;
+
+                    @media (max-width: 576px) {
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+
+                .find-dealer-div-contant-input {
+                    margin: 22px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media (max-width: 576px) {
+                        margin: 12px 0;
+                    }
+
+                    .input-relative {
+                        position: relative;
+
+                        @media (max-width: 1024px) {
+                            width: 100%;
+                        }
+
+                        input {
+                            width: 470px;
+                            padding: 13px 0 13px 39px;
+                            border-radius: 6px;
+                            background-color: #ffffff;
+                            border: none;
+                            outline: none;
+
+                            @media (max-width: 1024px) {
+                                width: 100%;
+                            }
+
+                            @media (max-width: 576px) {
+                                padding: 7px 0 8px 30px;
+                                border-radius: 2px;
+                            }
+                        }
+
+                        ::placeholder {
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: rgba(108, 108, 108, 0.7);
+                            font-weight: 500;
+                            text-align: left;
+                        }
+
+                        .search-icon {
+                            position: absolute;
+                            top: 12px;
+                            left: 12px;
+
+                            @media (max-width: 576px) {
+                                top: 7px;
+                                left: 10px;
+                                img {
+                                    width: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .find-dealer-div-contant-city {
+                    min-width: 660px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    @media (max-width: 1024px) {
+                        min-width: 100%;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        justify-content: center;
+                    }
+
+                    @media (max-width: 576px) {
+                        gap: 8px;
+                    }
+
+                    .contant-city-box {
+                        padding: 12px;
+                        background-color: #ffffff;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+
+                        @media (max-width: 576px) {
+                            padding: 8px 12px;
+                            border-radius: 2px;
+                        }
+
+                        span {
+                            display: block;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #282828;
+                            font-weight: 500;
+
+                            @media (max-width: 576px) {
+                                font-size: 9px;
+                                line-height: 11px;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: #ef404a;
+                            transition: 0.3s ease-in-out;
+
+                            span {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.partner {
+    margin-bottom: 100px;
+    background: linear-gradient(225deg, #e3fdf5 0%, #ffe6fa 100%);
+
+    @media (max-width: 576px) {
+        margin-bottom: 25px;
+    }
+
+    .partner-flex {
+        display: grid;
+        grid-template-columns: 770px 1fr;
+        align-items: center;
+
+        @media (max-width: 1180px) {
+            grid-template-columns: 600px 1fr;
+        }
+
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .partner-flex1 {
+            background-image: url("../../assets/images/dealership/scootybg.png");
+            width: 100%;
+            padding: 115px 0 10px 0;
+            background-size: cover;
+
+            @media (max-width: 576px) {
+                padding: 30px 0 5px 0;
+            }
+
+            .partner-flex1-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: 1024px) {
+                    img {
+                        width: 100%;
+                        padding: 0 40px;
+                    }
+                }
+            }
+        }
+
+        .partner-flex2 {
+            display: flex;
+            align-items: center;
+            padding: 0 110px;
+
+            @media (max-width: 1180px) {
+                padding: 20px;
+            }
+
+            @media (max-width: 576px) {
+                padding: 25px 15px;
+            }
+
+            .partner-flex2-box {
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+
+                h2 {
+                    font-size: 34px;
+                    line-height: 41px;
+                    color: #000000;
+                    font-weight: 700;
+                    margin-bottom: 6px;
+
+                    @media (max-width: 1024px) {
+                        font-size: 26px;
+                        line-height: 31px;
+                        margin-bottom: 4px;
+                    }
+
+                    @media (max-width: 576px) {
+                        text-align: center;
+                        font-size: 16px;
+                        line-height: 19px;
+                        margin-bottom: 4px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #6c6c6c;
+                    font-weight: 400;
+
+                    @media (max-width: 1024px) {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+
+                    @media (max-width: 576px) {
+                        text-align: center;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+
+                list-style {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #282828;
+                    font-weight: 500;
+                    margin: 30px auto;
+                    display: block;
+
+                    li {
+                        padding-bottom: 15px;
+
+                        &:last-child {
+                            padding: 0;
+                        }
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 12px;
+                        line-height: 16px;
+
+                        li {
+                            padding-bottom: 10px;
+                        }
+                    }
+
+                    @media (max-width: 576px) {
+                        margin: 20px auto;
+                        li {
+                            text-align: center;
+                        }
+                    }
+                }
+                .partner-flex2-box-button {
+                    button {
+                        padding: 15px 44px;
+                        background-color: #ef404a;
+                        border-radius: 6px;
+                        border: none;
+                        color: #ffffff;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: #e32629;
+                            transition: 0.3s ease-in-out;
+                        }
+
+                        @media (max-width: 1024px) {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+
+                        @media (max-width: 576px) {
+                            width: 100%;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.red-banner {
+    padding: 60px 0;
+    background: #ef404a;
+
+    @media (max-width: 1240px) {
+        padding: 50px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 25px 0;
+    }
+
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: content-box;
+
+        @media (max-width: 576px) {
+            padding: 0 25px;
+        }
+
+        .red-banner-grid {
+            display: grid;
+            grid-template-columns: 492px 1fr;
+            gap: 70px;
+            align-items: center;
+
+            @media (max-width: 1240px) {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                justify-content: center;
+            }
+
+            @media (max-width: 576px) {
+                gap: 22px;
+            }
+
+            .red-banner-grid1 {
+                h2 {
+                    font-size: 34px;
+                    line-height: 41px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    margin-bottom: 9px;
+
+                    @media (max-width: 1024px) {
+                        font-size: 26px;
+                        line-height: 31px;
+                        margin-bottom: 4px;
+                    }
+
+                    @media (max-width: 576px) {
+                        font-size: 15px;
+                        line-height: 19px;
+                        text-align: center;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #ffffff;
+                    font-weight: 500;
+
+                    @media (max-width: 1024px) {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+
+                    @media (max-width: 576px) {
+                        font-size: 12px;
+                        line-height: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .red-banner-grid2 {
+                display: grid;
+                grid-template-columns: 275px 1fr 275px;
+
+                @media (max-width: 1240px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                @media (max-width: 576px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 22px;
+                }
+
+                .red-banner-grid2-div {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+
+                    @media (max-width: 576px) {
+                        justify-content: center;
+                    }
+
+                    .red-banner-grid2-div1 {
+                        padding: 20px;
+                        border-radius: 50%;
+                        background: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        @media (max-width: 1024px) {
+                            padding: 15px;
+
+                            img {
+                                width: 30px;
+                            }
+                        }
+
+                        @media (max-width: 576px) {
+                            padding: 14px;
+
+                            img {
+                                width: 27px;
+                            }
+                        }
+                    }
+
+                    .red-banner-grid2-div2 {
+                        h2 {
+                            font-size: 30px;
+                            line-height: 36px;
+                            color: #ffffff;
+                            font-weight: 700;
+                            margin-bottom: 1px;
+
+                            @media (max-width: 1024px) {
+                                font-size: 26px;
+                                line-height: 31px;
+                                margin-bottom: 4px;
+                            }
+
+                            @media (max-width: 576px) {
+                                min-width: 235px;
+                                font-size: 18px;
+                                line-height: 22px;
+                                margin-bottom: 2px;
+                            }
+
+                            @media (max-width: 350px) {
+                                min-width: 0;
+                                max-width: 80px;
+                            }
+                        }
+
+                        p {
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #ffffff;
+                            font-weight: 500;
+                        }
+
+                        @media (max-width: 1024px) {
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+
+                        @media (max-width: 350px) {
+                            max-width: 100px;
+                        }
+                    }
+                }
+
+                .red-banner-grid2-line {
+                    width: 1px;
+                    height: 100%;
+                    background-color: #fff;
+                    margin: 0 auto;
+
+                    @media (max-width: 576px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subscribe {
+    padding: 50px 0 100px 0;
+
+    @media (max-width: 1024px) {
+        padding: 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 25px 0;
+    }
+
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: content-box;
+
+        @media (max-width: 576px) {
+            padding: 0;
+        }
+
+        .subscribe-div {
+            margin-top: 135px;
+            position: relative;
+            background: linear-gradient(297.24deg, #c2e9fb 8.25%, #a1c4fd 91.76%);
+
+            @media (max-width: 1024px) {
+                margin-top: 50px;
+            }
+
+            @media (max-width: 576px) {
+                margin: 0;
+                padding: 20px 15px 23px 15px;
+            }
+
+            .subscribe-div2 {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+
+                img {
+                    display: block;
+
+                    &:last-child {
+                        display: none;
+                    }
+
+                    @media (max-width: 1024px) {
+                        max-width: 300px;
+                    }
+
+                    @media (max-width: 650px) {
+                        max-width: 250px;
+                    }
+
+                    @media (max-width: 576px) {
+                        width: 100%;
+
+                        &:first-child {
+                            display: none;
+                        }
+
+                        &:last-child {
+                            display: block;
+                        }
+                    }
+                }
+
+                @media (max-width: 576px) {
+                    position: static;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .subscribe-div1 {
+                padding: 80px 50px;
+
+                @media (max-width: 1240px) {
+                    padding: 30px;
+                }
+
+                @media (max-width: 576px) {
+                    padding: 25px 0 0 0;
+                }
+
+                h2 {
+                    font-size: 34px;
+                    line-height: 41px;
+                    color: #282828;
+                    font-weight: 700;
+                    margin-bottom: 23px;
+
+                    @media (max-width: 1240px) {
+                        max-width: 500px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: 28px;
+                        line-height: 31px;
+                        max-width: 300px;
+                    }
+
+                    @media (max-width: 650px) {
+                        max-width: 200px;
+                    }
+
+                    @media (max-width: 576px) {
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        margin-bottom: 18px;
+                        min-width: 100%;
+                    }
+                }
+
+                .subscribe-div1-input {
+                    position: relative;
+                    max-width: 440px;
+
+                    @media (max-width: 1024px) {
+                        max-width: 300px;
+                    }
+
+                    @media (max-width: 650px) {
+                        max-width: 200px;
+                    }
+
+                    @media (max-width: 576px) {
+                        max-width: 100%;
+                    }
+
+                    .subscribe-div1-input-select {
+                        position: absolute;
+                        top: 14px;
+                        left: 5px;
+
+                        @media (max-width: 1024px) {
+                            top: 13px;
+                        }
+
+                        @media (max-width: 576px) {
+                            top: 11px;
+                        }
+
+                        select {
+                            border: none;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #282828;
+                            font-weight: 600;
+                            border-right: 1px solid #6c6c6c;
+                            appearance: none;
+                            padding: 0 5px;
+
+                            @media (max-width: 576px) {
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 13px 18px 13px 60px;
+                        background-color: #ffffff;
+                        border-radius: 4px;
+                        border: none;
+                        box-shadow: 0px 1px 4px 0px #00000026;
+
+                        @media (max-width: 576px) {
+                            padding: 11px 11px 11px 55px;
+                            border-radius: 2px;
+                        }
+                    }
+                    
+                    ::placeholder {
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #6c6c6c;
+                        font-weight: 400;
+                    }
+                    
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                      -webkit-appearance: none;
+                      margin: 0;
+                    }
+                }
+
+                .subscribe-div1-button {
+                    margin-top: 40px;
+
+                    @media (max-width: 576px) {
+                        margin-top: 22px;
+                    }
+
+                    button {
+                        padding: 17px 30px;
+                        background-color: #ef404a;
+                        border-radius: 6px;
+                        border: none;
+                        color: #ffffff;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 19px;
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: #e32629;
+                            transition: 0.3s ease-in-out;
+                        }
+
+                        @media (max-width: 576px) {
+                            width: 100%;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
