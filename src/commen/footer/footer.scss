@@ -119,9 +119,15 @@ h6 {
                     font-weight: 500;
                     line-height: 17px;
                     margin-bottom: 26px;
+                    transition: 0.3s ease-in-out;
 
                     &:last-child {
                         margin-bottom: 0;
+                    }
+
+                    &:hover {
+                      color: #ef404a;
+                      transition: 0.3s ease-in-out;
                     }
                 }
 
